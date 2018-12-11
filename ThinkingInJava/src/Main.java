@@ -1,6 +1,11 @@
+import java.io.Console;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static <E> void printArray(E[] inputArray){
@@ -37,21 +42,25 @@ public class Main {
         //System.out.printf("%d, %d, 和 %d, 中最大的数为 %d, \n\n", 3,4,5,maximum(3,4,5));
         //System.out.printf("%.1f, %.1f, 和 %.1f, 中最大的数为 %.1f, \n\n", 3.1,4.1,5.1,maximum(3.1,4.2,5.3));
         //System.out.printf("%s, %s, 和 %s, 中最大的数为 %s, \n\n", "pear","apple","orange",maximum("pear","apple","orange"));
-        long nd = 1000 * 24 * 60 * 60;
-        long nh = 1000 * 60 * 60;
-        long nm = 1000 * 60;
-        Date startTime = StrToDate("2018-10-21 10:41:43");
-        Date endTime = StrToDate("2018-10-21 19:42:44");
-        long diff = endTime.getTime() - startTime.getTime();
-        long day = diff / nd;
-        // 计算差多少小时
-        long hour = diff % nd / nh;
-        // 计算差多少分钟
-        long min = diff % nd % nh / nm;
-        // 计算差多少秒//输出结果
-        // long sec = diff % nd % nh % nm / ns;
-        System.out.printf(day + "天" + hour + "小时" + min + "分钟");
-
+        //long nd = 1000 * 24 * 60 * 60;
+        //long nh = 1000 * 60 * 60;
+        //long nm = 1000 * 60;
+        //Date startTime = StrToDate("2018-10-21 10:41:43");
+        //Date endTime = StrToDate("2018-10-21 19:42:44");
+        //long diff = endTime.getTime() - startTime.getTime();
+        //long day = diff / nd;
+        //// 计算差多少小时
+        //long hour = diff % nd / nh;
+        //// 计算差多少分钟
+        //long min = diff % nd % nh / nm;
+        //// 计算差多少秒//输出结果
+        //// long sec = diff % nd % nh % nm / ns;
+        //System.out.printf(day + "天" + hour + "小时" + min + "分钟");
+        List<String> list = Arrays.asList("aaa","bbb","ccc","ddd","eee","fff","ggg","xxx","yyy","zzz");
+        List<String> temp = list.stream().skip(8).limit(10).collect(Collectors.toList());
+        temp.forEach(item -> {
+            System.out.println(item);
+        });
     }
 
     public static Date StrToDate(String str) {

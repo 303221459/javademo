@@ -1,4 +1,4 @@
-package com.demo.Filter;
+package com.demo.filter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
