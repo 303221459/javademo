@@ -5,9 +5,11 @@ import com.demo.pojo.UserPosition;
 import com.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
@@ -20,11 +22,22 @@ import java.util.Map;
 @Slf4j
 public class IndexController {
 
+    @Value("字符串1")
+    private String testName; // 注入普通字符串
+
+    @Value("#{systemProperties['os.name']}")
+    private String systemPropertiesName; // 注入操作系统属性
+
+    @Value("#{ T(java.lang.Math).random() * 100.0 }")
+    private double randomNumber; //注入表达式结果
+
+    @Value("${domain.name}")
+    private String domainName; // 注入application.properties的配置属性
+
     @Autowired
     UserService userService;
     @GetMapping("/show")
     public UserDetails getUserByUid(int uid){
-
         return userService.getUserDetailsByUid(uid);
     }
 
@@ -70,6 +83,14 @@ public class IndexController {
         Map map = new HashMap<String, String>();
         map.put("北京","北方城市");
         map.put("深圳","南方城市");
+
+
         return map;
+    }
+
+    @RequestMapping("/debug")
+    public String Debug(){
+        int number = 5 / 0;
+        return null;
     }
 }
