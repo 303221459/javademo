@@ -190,7 +190,10 @@ public class Main {
         //}
 
         int das= 13 / 3;
-        Integer count= 0;
+        Integer count= null;
+        if(count  == null ){
+            System.out.println(count);
+        }
         count = 123;
 
         System.out.println(count);

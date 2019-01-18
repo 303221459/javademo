@@ -4,7 +4,9 @@ import com.demo.dao.UserDetailsMapper;
 import com.demo.dao.UserPositionMapper;
 import com.demo.pojo.UserDetails;
 import com.demo.pojo.UserPosition;
+import com.google.common.base.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -20,6 +22,33 @@ public class UserServiceImpl implements UserService{
 
     @Autowired
     UserPositionMapper userPositionMapper;
+
+    @Autowired
+    StringRedisTemplate template;
+
+    static final String KEY_USER_INFO__NAME = "com_demo_user_info_007_%s";
+
+    public String getUserNameById(Integer uid){
+        String userName = "未知用户";
+        try {
+            userName = template.opsForValue().get(String.format(KEY_USER_INFO__NAME, uid));
+            if (Strings.isNullOrEmpty(userName)) {
+                // Redis中没有就读数据库
+                UserDetails userDetails = getUserDetailsByUid(uid);
+                if (userDetails != null && !Strings.isNullOrEmpty(userDetails.getCity())) {
+                    userName = userDetails.getCity();
+                }
+            }
+        }catch(Exception e){
+            System.out.println(e.toString());
+        }
+
+        return userName;
+    }
+
+    public void setUserNameById(Integer uid, String userName){
+        template.opsForValue().set(String.format(KEY_USER_INFO__NAME, uid), userName);
+    }
 
     public UserDetails getUserDetailsByUid(int uid){
         return userDetailsMapper.getUserDetailsByUid(uid);

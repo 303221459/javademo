@@ -25,6 +25,9 @@ insert into `userdetails` values(1,1,'中关村丹棱街','北京',1);
 insert into `userdetails` values(2,2,'黄浦区中华路','上海',0);
 insert into `userdetails` values(3,3,'一德路','广州',0);
 insert into `userdetails` values(4,4,'福田区福华3路','深圳',1);
+insert into `userdetails` values(5,5,'良乡大学城','北京',1);
+insert into `userdetails` values(6,6,'拱辰大街','北京',1);
+insert into `userdetails` values(7,7,'后厂村路','北京',1);
 select * from userdetails;
 
 CREATE TABLE `userposition` (
@@ -49,5 +52,20 @@ select
     longitude <=116.3341411991098 and 
     latitude >= 116.29265356788163 and 
     latitude <= 116.32862643211838;
+    
+    
+    
+    CREATE TABLE `userrelation` (
+	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `uid` int(10) NOT NULL,
+
+    PRIMARY KEY (`id`)
+
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+select * from userdetails;
+
+
+    
 
 
