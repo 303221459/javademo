@@ -1,5 +1,6 @@
 package com.demo.service;
 
+import com.demo.pojo.UserAccount;
 import com.demo.pojo.UserDetails;
 import com.demo.pojo.UserPosition;
 
@@ -16,4 +17,5 @@ public interface UserService {
     List<UserPosition> getvicinitysort(BigDecimal longitude,BigDecimal latitude);
     String getUserNameById(Integer uid);
     void setUserNameById(Integer uid, String userName);
+    UserAccount getUserByAccount(String account);
 }

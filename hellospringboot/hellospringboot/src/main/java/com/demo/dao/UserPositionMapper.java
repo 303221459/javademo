@@ -1,11 +1,15 @@
 package com.demo.dao;
 
 import com.demo.pojo.UserPosition;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.List;
 
+@Mapper
+@Repository
 public interface UserPositionMapper {
     int deleteByPrimaryKey(Integer id);
 

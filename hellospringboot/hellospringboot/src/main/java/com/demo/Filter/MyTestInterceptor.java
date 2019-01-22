@@ -1,11 +1,11 @@
 package com.demo.filter;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by toutou on 2018/10/27.
@@ -36,6 +36,15 @@ public class MyTestInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object obj) throws Exception {
         System.out.println("MyTestInterceptor  1111111111");
+        Object user= request.getSession().getAttribute("useraccount");
+        if (user==null){
+            // response.sendRedirect(request.getContextPath()+"/error");
+            response.setCharacterEncoding("UTF-8");
+            response.setContentType("text/html;charset=utf-8");
+            response.getWriter().write("请先登录");
+            return false;
+        }
+
         return true;
     }
 }

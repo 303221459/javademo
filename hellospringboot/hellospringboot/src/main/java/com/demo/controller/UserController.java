@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class UserController {
     UserService userService;
 
     @RequestMapping(value = "/mynearby")
-    public String myNearby(Model model, double lon, double lat)
+    public String myNearby(HttpServletRequest request, Model model, double lon, double lat)
     {
         double r = 6371;//地球半径千米
         double dis = 2; //半径 单位:km

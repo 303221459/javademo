@@ -189,14 +189,17 @@ public class Main {
         //    System.out.println("2");
         //}
 
-        int das= 13 / 3;
-        Integer count= null;
-        if(count  == null ){
+        //int das= 13 / 3;
+        //Integer count= null;
+        //if(count  == null ){
+        //    System.out.println(count);
+        //}
+        //count = 123;
+
+        for(int i=0;i<100;i++) {
+            Integer count = getRandom(0,9);
             System.out.println(count);
         }
-        count = 123;
-
-        System.out.println(count);
 
         System.out.println("OK");
     }
