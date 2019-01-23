@@ -33,7 +33,7 @@ public class RedisController {
     @RequestMapping(value = "/jedistest")
     public String jedisTest(String key){
         // 创建一个jedis对象
-        Jedis jedis = new Jedis("10.168.11.129", 6379);
+        Jedis jedis = new Jedis("@ip", 6379);
         // 直接调用jedis对象的方法，方法名称和redis的命令一致
         //jedis.set("key1", "test01");
         String key1 = jedis.get(key);

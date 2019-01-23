@@ -43,24 +43,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hellospringboot/pom.xml">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="108" selection-end-column="21" />
+            <state relative-caret-position="342">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/LoginController.java">
+      <file leaf-file-name="RedisController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/RedisController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="244">
+              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,23 +110,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAccountMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/resources/mapper/UserAccountMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-              <folding>
-                <marker date="1548153364116" expanded="true" signature="921:1028" ph="select from useraccount" />
-                <marker date="1548153364116" expanded="true" signature="1137:1236" ph="select from useraccount" />
-                <marker date="1548153364116" expanded="true" signature="1322:1383" ph="delete from " />
-                <marker date="1548153364116" expanded="true" signature="1465:1762" ph="insert into useraccount... " />
-                <marker date="1548153364116" expanded="true" signature="3073:3674" ph="update usera... " />
-                <marker date="1548153364116" expanded="true" signature="3768:4072" ph="update usera... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -151,9 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MyDemoHandler</find>
-      <find>info</find>
-      <find>Sock</find>
       <find>customendpoint</find>
       <find>p</find>
       <find>WebMvcConfig</find>
@@ -167,12 +157,7 @@
       <find>WebMvcConfigurerA</find>
       <find>args</find>
       <find>sendMsg</find>
-      <find>@</find>
-      <find>@ip</find>
       <find>set</find>
-      <find>10</find>
-      <find>10.</find>
-      <find>10.1</find>
       <find>RedisConnection</find>
       <find>updateByPrimaryKeySelective</find>
       <find>deleteByPrimaryKey</find>
@@ -181,6 +166,14 @@
       <find>1111111111111111111111111</find>
       <find>/login</find>
       <find>getUserByAccount</find>
+      <find>10.168</find>
+      <find>@ip</find>
+      <find>@i</find>
+      <find>@</find>
+      <find>10</find>
+      <find>10.</find>
+      <find>10.1</find>
+      <find>10.16</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -214,13 +207,11 @@
         <option value="$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.3.0/quartz-2.3.0-sources.jar!/org/quartz/Job.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/PageController.java" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.java" />
-        <option value="$PROJECT_DIR$/hellospringboot/src/main/resources/application.properties" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE-sources.jar!/org/springframework/util/Assert.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/hellospringboot/HellospringbootApplication.java" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE-sources.jar!/org/springframework/cache/annotation/Cacheable.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/pojo/UserDetails.java" />
-        <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/RedisController.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/service/CacheService.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/CacheController.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/service/CacheServiceImpl.java" />
@@ -242,6 +233,8 @@
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/pojo/UserAccount.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/filter/WebConfig.java" />
         <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/RedisController.java" />
+        <option value="$PROJECT_DIR$/hellospringboot/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -1594,12 +1587,12 @@
       <workItem from="1544690499458" duration="24898000" />
       <workItem from="1547544232317" duration="17173000" />
       <workItem from="1547695016703" duration="23025000" />
-      <workItem from="1548147024799" duration="8641000" />
+      <workItem from="1548147024799" duration="9893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250428000" />
+    <option name="totallyTimeSpent" value="251680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1863,26 +1856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/RedisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="37" lean-forward="false" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-            <element signature="e#622#623#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/service/CacheService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1938,26 +1911,26 @@
         <state relative-caret-position="544">
           <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
           <folding>
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="false" />
+            <element signature="e#284#285#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#349#350#0" expanded="false" />
+            <element signature="e#380#381#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
+            <element signature="e#543#544#0" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#622#623#0" expanded="false" />
+            <element signature="e#695#696#0" expanded="false" />
+            <element signature="e#735#736#0" expanded="false" />
+            <element signature="e#767#768#0" expanded="false" />
+            <element signature="e#821#822#0" expanded="false" />
+            <element signature="e#863#864#0" expanded="false" />
+            <element signature="e#902#903#0" expanded="false" />
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#985#986#0" expanded="false" />
+            <element signature="e#1025#1026#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2172,11 +2145,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="342">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/java/com/demo/controller/RedisController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hellospringboot/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
