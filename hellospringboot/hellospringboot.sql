@@ -78,6 +78,7 @@ insert into `useraccount` values(2,'钱(dev)',27,136,'3658561548@126.com','test0
 insert into `useraccount` values(3,'孙(dev)',31,159,'3658561548@163.com','test003','test003');
 insert into `useraccount` values(4,'李(dev)',35,130,'3658561548@sina.com','test004','test004');
 select * from `useraccount`;
+
     
 
 

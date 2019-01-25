@@ -54,6 +54,14 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void setUserNameById(Integer uid, String userName){
+        template.opsForValue().setIfAbsent("key", "value");
+        //String result = template.execute(new RedisCallback<String>() {
+        //    @Override
+        //    public String doInRedis(RedisConnection connection) throws DataAccessException {
+        //        JedisCommands commands = (JedisCommands) connection.getNativeConnection();
+        //        return commands.set(key, "锁定的资源", "NX", "PX", 3000);
+        //    }
+        //});
         template.opsForValue().set(String.format(KEY_USER_INFO__NAME, uid), userName);
     }
 
