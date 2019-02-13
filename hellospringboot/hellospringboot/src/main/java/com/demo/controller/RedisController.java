@@ -5,7 +5,6 @@ import com.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import redis.clients.jedis.Jedis;
@@ -31,25 +30,25 @@ public class RedisController {
     @Autowired
     StringRedisTemplate template;
 
-    @Transactional
-    @RequestMapping(value = "/testredistran1")
-    public String testRedisTran1()
-    {
-        template.opsForValue().set("test1a", "test1a");
-        template.opsForValue().set("test1b", "test1b");
-        template.opsForValue().set("test1c", "test1c");
-        return "1";
-    }
-
-    @Transactional
-    @RequestMapping(value = "/testredistran2")
-    public String testRedisTran2()
-    {
-        template.opsForValue().set("test2a", "test2a");
-        template.opsForValue().set(null, "test2b");
-        template.opsForValue().set("test2c", "test2c");
-        return "2";
-    }
+    //@Transactional
+    //@RequestMapping(value = "/testredistran1")
+    //public String testRedisTran1()
+    //{
+    //    template.opsForValue().set("test1a", "test1a");
+    //    template.opsForValue().set("test1b", "test1b");
+    //    template.opsForValue().set("test1c", "test1c");
+    //    return "1";
+    //}
+    //
+    //@Transactional
+    //@RequestMapping(value = "/testredistran2")
+    //public String testRedisTran2()
+    //{
+    //    template.opsForValue().set("test2a", "test2a");
+    //    template.opsForValue().set(null, "test2b");
+    //    template.opsForValue().set("test2c", "test2c");
+    //    return "2";
+    //}
 
     @RequestMapping(value = "/testredistran3")
     public String testRedisTran3()
