@@ -4,6 +4,8 @@ import com.demo.common.RedisLockHelper;
 import com.demo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import redis.clients.jedis.Jedis;
@@ -25,6 +27,42 @@ public class RedisController {
      * 超时时间 5s
      */
     private static final int TIMEOUT = 5*1000;
+
+    @Autowired
+    StringRedisTemplate template;
+
+    @Transactional
+    @RequestMapping(value = "/testredistran1")
+    public String testRedisTran1()
+    {
+        template.opsForValue().set("test1a", "test1a");
+        template.opsForValue().set("test1b", "test1b");
+        template.opsForValue().set("test1c", "test1c");
+        return "1";
+    }
+
+    @Transactional
+    @RequestMapping(value = "/testredistran2")
+    public String testRedisTran2()
+    {
+        template.opsForValue().set("test2a", "test2a");
+        template.opsForValue().set(null, "test2b");
+        template.opsForValue().set("test2c", "test2c");
+        return "2";
+    }
+
+    @RequestMapping(value = "/testredistran3")
+    public String testRedisTran3()
+    {
+        //开启事务
+        template.multi();
+        template.opsForValue().set("test3a", "test3a");
+        template.opsForValue().set(null, "test3b");
+        template.opsForValue().set("test3c", "test3c");
+        //关闭事务
+        template.exec();
+        return "3";
+    }
 
     @RequestMapping(value = "/getusernamebyid")
     public String getUserNameById(Integer uid)
